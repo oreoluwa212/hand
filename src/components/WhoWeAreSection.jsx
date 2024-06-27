@@ -4,7 +4,7 @@ import HeaderText from "./textComponents/HeaderText";
 function WhoWeAreSection() {
   return (
     <div className="w-full h-fit flex flex-col font-manrope justify-center items-center py-10 px-[8%]">
-      <div className="w-full flex flex-col items-start text-xl font-medium pr-14">
+      <div className="w-full flex flex-col items-start text-xl font-medium pr-0 lgss:pr-14">
         <HeaderText h1={"Who we are"} />
         <h4 className="text-left font-manrope">
           We love what we do and create partnerships with our clients to ensure

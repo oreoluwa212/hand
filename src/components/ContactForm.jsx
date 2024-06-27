@@ -7,7 +7,7 @@ import HeaderText from "./textComponents/HeaderText";
 import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
-   const navigate = useNavigate();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -51,13 +51,18 @@ const ContactForm = () => {
     } else {
       setErrors({});
       console.log("Form data submitted:", formData);
-      navigate("/success")
       toast.success("Form submitted successfully!");
+      setTimeout(() => {
+        navigate("/success");
+      }, 2000);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full justify-end items-end">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col gap-4 w-full justify-end items-end"
+    >
       <ToastContainer />
       <div className="lgss:w-[40%] flex justify-end items-end text-center lgss:text-right">
         <HeaderText h1={"We'd love to hear from you"} />

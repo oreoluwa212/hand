@@ -18,15 +18,15 @@ const NavMenu = () => {
   }, [isOpen]);
 
   return (
-    <div className="w-full lgss:px-[8%] relative py-5 bg-white">
+    <div className="w-full lgss:px-[6%] relative py-5 bg-white">
       {/* Desktop Navigation */}
       <div className="lgss:flex lgss:flex-row hidden justify-between items-center font-semibold py-3 bg-transparent">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-start items-start w-[15%]">
           <Link to={"/"}>
-            <h1 className="font-manrope font-extrabold text-2xl">Hand</h1>
+            <h1 className="font-manrope font-extrabold text-3xl">Hand</h1>
           </Link>
         </div>
-        <ul className="lgss:flex gap-7 justify-between lg:w-[30%] lgss:w-[35%] font-semibold text-sm text-secondary">
+        <ul className="lgss:flex gap-7 justify-between lgss:w-[40%] font-semibold text-md text-secondary">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -70,7 +70,7 @@ const NavMenu = () => {
         </ul>
         <div className="flex">
           <Link to={"/"}>
-            <button className="bg-primary rounded-xl py-3 px-4 shadow-sm text-white">
+            <button className="bg-primary rounded-xl py-3 px-6 shadow-sm text-white">
               Start a project
             </button>
           </Link>

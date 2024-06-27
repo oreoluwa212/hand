@@ -47,7 +47,7 @@ function HeroSection() {
       ref={sectionRef}
       className="flex flex-col items-center justify-between w-full h-screen"
     >
-      <div className="lgss:w-[60%] lg:w-[40%] text-center h-[50vh] flex items-end justify-center">
+      <div className="lg:w-[55%] text-center h-[50vh] flex items-end justify-center">
         <h1 className="md:text-4xl text-4xl lgss:text-7xl font-bold text-primary">
           Let's create something great together.
         </h1>

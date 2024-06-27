@@ -17,7 +17,7 @@ const InputField = ({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className={`p-4 border ${
+        className={`p-5 border ${
           error ? "border-red-500" : "border-[#101010] border-[2px]"
         } outline-none rounded-lg w-full`}
         required={required}

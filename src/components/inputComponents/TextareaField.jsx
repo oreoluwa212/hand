@@ -17,7 +17,7 @@ const TextareaField = ({
         onChange={onChange}
         className={`p-4 border ${
           error ? "border-red-500" : "border-[#101010] border-[2px]"
-        } outline-none rounded-lg w-full h-32`}
+        } outline-none rounded-lg w-full h-40`}
         required={required}
       />
       {error && <span className="text-red-500 text-sm">{error}</span>}

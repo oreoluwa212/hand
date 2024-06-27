@@ -64,7 +64,7 @@ const ContactForm = () => {
       className="flex flex-col gap-4 w-full justify-end items-end"
     >
       <ToastContainer />
-      <div className="lgss:w-[40%] flex justify-end items-end text-center lgss:text-right">
+      <div className="lgss:w-[45%] flex justify-end items-end text-center lgss:text-right">
         <HeaderText h1={"We'd love to hear from you"} />
       </div>
       <div className="flex flex-col gap-6 w-full">

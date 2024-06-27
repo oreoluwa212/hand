@@ -8,8 +8,6 @@ This is a React application built using Vite, featuring various sections such as
 - [Components](#components)
 - [Validation](#validation)
 - [Routing](#routing)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Structure
 

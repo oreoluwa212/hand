@@ -34,7 +34,7 @@ const MeetTheTeamSection = () => {
           }
         });
       },
-      { threshold: 0.1 } // Adjust threshold as needed
+      { threshold: 0.1 }
     );
 
     const section = sectionRef.current;

@@ -5,3 +5,66 @@
    background-position: center;
    background-repeat: no-repeat;
 }
+
+
+
+@keyframes fadeInDown {
+   from {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+@keyframes fadeInUp {
+   from {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.card {
+   opacity: 0;
+   transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.card.visible.fade-down {
+   animation: fadeInDown 1.5s ease-in-out forwards;
+}
+
+.card.visible.fade-up {
+   animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+
+.hero-image {
+   opacity: 0;
+   transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.hero-image.visible.fade-down {
+   animation: fadeInDown 1.5s ease-in-out forwards;
+}
+
+.hero-image.visible.fade-up {
+   animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+
+.text {
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.text.visible {
+   animation: fadeIn 0.3s ease-in-out forwards;
+}

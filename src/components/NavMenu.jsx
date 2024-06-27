@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavMenu = () => {
@@ -18,30 +18,55 @@ const NavMenu = () => {
   }, [isOpen]);
 
   return (
-    <div className="w-full px-[5%] relative py-5 bg-white">
+    <div className="w-full lgss:px-[8%] relative py-5 bg-white">
       {/* Desktop Navigation */}
       <div className="lgss:flex lgss:flex-row hidden justify-between items-center font-semibold py-3 bg-transparent">
         <div className="flex justify-center items-center">
           <Link to={"/"}>
-            <h1 className="font-manrope font-extrabold text-xl">Hand</h1>
+            <h1 className="font-manrope font-extrabold text-2xl">Hand</h1>
           </Link>
         </div>
-        <ul className="lgss:flex gap-7 justify-between lg:w-[50%] lgss:w-[35%] font-semibold text-sm text-secondary">
-          <Link to={"/"}>
+        <ul className="lgss:flex gap-7 justify-between lg:w-[30%] lgss:w-[35%] font-semibold text-sm text-secondary">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-[#C82090]" : "text-secondary"
+            }
+          >
             <li>Home</li>
-          </Link>
-          <Link to={"/"}>
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "text-[#C82090]" : "text-secondary"
+            }
+          >
             <li>About Us</li>
-          </Link>
-          <Link to={"/"}>
+          </NavLink>
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              isActive ? "text-[#C82090]" : "text-secondary"
+            }
+          >
             <li>Services</li>
-          </Link>
-          <Link to={"/"}>
+          </NavLink>
+          <NavLink
+            to="/blog"
+            className={({ isActive }) =>
+              isActive ? "text-[#C82090]" : "text-secondary"
+            }
+          >
             <li>Blog</li>
-          </Link>
-          <Link to={"/"}>
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "text-[#C82090]" : "text-secondary"
+            }
+          >
             <li>Contact Us</li>
-          </Link>
+          </NavLink>
         </ul>
         <div className="flex">
           <Link to={"/"}>
@@ -53,18 +78,13 @@ const NavMenu = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="flex lgss:hidden w-full justify-between items-center py-5 border-b px-10">
+      <div className="flex lgss:hidden w-full justify-between items-center py-5 px-8 shadow-md border-b">
         <div className="flex justify-center items-center">
           <Link to={"/"}>
-            <h1 className="font-manrope font-extrabold">Hand</h1>
+            <h1 className="font-manrope font-extrabold text-xl">Hand</h1>
           </Link>
         </div>
         <div className="flex items-center justify-center gap-6">
-          <Link to={"/"}>
-            <button className="bg-primary rounded-xl py-3 px-4 shadow-sm text-white border">
-              Start a project
-            </button>
-          </Link>
           {isOpen ? (
             <FaTimes
               onClick={() => setIsOpen(false)}

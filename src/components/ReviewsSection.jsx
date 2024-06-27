@@ -38,7 +38,7 @@ function ReviewsSection() {
 
     counts.forEach((count, index) => {
       const isLargeNumber = count.target >= 1000000;
-      const increment = Math.ceil(count.target / (isLargeNumber ? 100 : 1000)); // Faster increment for large number
+      const increment = Math.ceil(count.target / (isLargeNumber ? 100 : 1000));
 
       intervalIds.push(
         setInterval(

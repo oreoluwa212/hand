@@ -1,4 +1,4 @@
-doimport { midImage } from "../assets"
+import { midImage } from "../assets"
 import HeaderText from "./textComponents/HeaderText";
 
 function WhoWeAreSection() {

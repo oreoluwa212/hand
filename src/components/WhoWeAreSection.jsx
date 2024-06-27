@@ -15,7 +15,7 @@ function WhoWeAreSection() {
         </h4>
       </div>
       <div className="w-full pt-10 mt-6">
-        <img src={midImage} alt="Who We Are Image" />
+        <img src={midImage} className="w-full" alt="Who We Are Image" />
       </div>
     </div>
   );

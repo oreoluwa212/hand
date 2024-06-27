@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function ReviewsText({ h1, p }) {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 font-manrope">
       <h1 className="text-yellowBg md:text-4xl text-lg font-bold">
         {h1} <span className="counter"></span>
       </h1>

@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 function SendProposalSection() {
   return (
-    <div className="px-[10%] my-10 py-10 w-full flex justify-between items-center h-screen">
+    <div className="px-[10%] my-10 py-10 w-full flex justify-between items-center h-fit lgss:h-screen">
       <div className="h-fit lgss:w-[40%] w-full bg-pinkBg hidden lgss:flex justify-center items-center py-10 px-7">
         <img className="h-[600px]" src={twoPeople} alt="Proposal Image" />
       </div>

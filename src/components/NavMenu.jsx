@@ -80,9 +80,9 @@ const NavMenu = () => {
       {/* Mobile Navigation */}
       <div className="flex lgss:hidden w-full justify-between items-center py-5 px-8 shadow-md border-b">
         <div className="flex justify-center items-center">
-          <Link to={"/"}>
+          <NavLink to={"/"}>
             <h1 className="font-manrope font-extrabold text-xl">Hand</h1>
-          </Link>
+          </NavLink>
         </div>
         <div className="flex items-center justify-center gap-6">
           {isOpen ? (
@@ -107,21 +107,46 @@ const NavMenu = () => {
         >
           <div className="bg-white flex flex-col justify-center items-center w-full h-screen z-">
             <ul className="flex flex-col gap-8 pb-8 justify-center text-secondary font-semibold text-[20px]">
-              <Link to={"/"}>
-                <li onClick={() => setIsOpen(false)}>Home</li>
-              </Link>
-              <Link to={"/"}>
-                <li onClick={() => setIsOpen(false)}>About Us</li>
-              </Link>
-              <Link to={"/"}>
-                <li onClick={() => setIsOpen(false)}>Services</li>
-              </Link>
-              <Link to={"/"}>
-                <li onClick={() => setIsOpen(false)}>Blog</li>
-              </Link>
-              <Link to={"/"}>
-                <li onClick={() => setIsOpen(false)}>Contact Us</li>
-              </Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "text-[#C82090]" : "text-secondary"
+                }
+              >
+                <li>Home</li>
+              </NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "text-[#C82090]" : "text-secondary"
+                }
+              >
+                <li>About Us</li>
+              </NavLink>
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  isActive ? "text-[#C82090]" : "text-secondary"
+                }
+              >
+                <li>Services</li>
+              </NavLink>
+              <NavLink
+                to="/blog"
+                className={({ isActive }) =>
+                  isActive ? "text-[#C82090]" : "text-secondary"
+                }
+              >
+                <li>Blog</li>
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "text-[#C82090]" : "text-secondary"
+                }
+              >
+                <li>Contact Us</li>
+              </NavLink>
             </ul>
             <div className="flex flex-col-reverse justify-center items-center gap-10 w-full px-[10%]">
               <Link className="w-full" to={"/"}>

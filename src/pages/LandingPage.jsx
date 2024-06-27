@@ -5,6 +5,7 @@ import WhoWeAreSection from "../components/WhoWeAreSection";
 import MeetTheTeamSection from "../components/MeetTheTeamSection";
 import ReviewsSection from "../components/ReviewsSection";
 import SendProposalSection from "../components/SendProposalSection";
+import Footer from "../components/Footer";
 
 const LandingPage = () => {
   return (
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <MeetTheTeamSection />
       <ReviewsSection />
       <SendProposalSection />
+      <Footer/>
     </div>
   );
 };
